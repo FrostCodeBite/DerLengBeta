@@ -14,6 +14,7 @@
     <TextView
         android:text="Ignore your concerns and let's hangout"
         style="@style/OpenSanRegTxt"
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -23,6 +24,7 @@
         android:hint="USERNAME"
         style="@style/OpenSanBoldTxt"
         android:width="300dp"
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <EditText
@@ -30,6 +32,7 @@
         android:hint="PASSWORD"
         style="@style/OpenSanBoldTxt"
         android:width="300dp"
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -40,6 +43,7 @@
         android:background="@drawable/round_button"
         style="@style/OpenSanBoldPinkTxt"
         android:layout_width="260dp"
+        android:layout_margin="10dp"
         android:layout_height="50dp" />
     <LinearLayout
         android:orientation="horizontal"

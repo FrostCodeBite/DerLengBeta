@@ -15,6 +15,7 @@
         android:text="Ignore your concerns and let's hangout"
         style="@style/OpenSanRegTxt"
         android:layout_width="wrap_content"
+        android:layout_margin="10dp"
         android:layout_height="wrap_content" />
 
     <!--Username & Password Input-->
@@ -24,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="300dp"
+        android:layout_margin="10dp"
         android:hint="PHONE NUMBER" />
     <EditText
         android:id="@+id/email_edit"
@@ -31,6 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="300dp"
+        android:layout_margin="10dp"
         android:hint="EMAIL" />
     <EditText
         android:id="@+id/username_edit"
@@ -38,12 +41,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="300dp"
+        android:layout_margin="10dp"
         android:hint="USERNAME" />
     <EditText
         android:id="@+id/password_edit"
         android:hint="PASSWORD"
         style="@style/OpenSanBoldTxt"
         android:width="300dp"
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -54,6 +59,7 @@
         android:background="@drawable/round_button"
         style="@style/OpenSanBoldPinkTxt"
         android:layout_width="260dp"
+        android:layout_margin="10dp"
         android:layout_height="50dp" />
 
 </LinearLayout>
