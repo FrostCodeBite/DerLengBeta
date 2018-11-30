@@ -120,6 +120,8 @@ public class RestaurantListActivity extends AppCompatActivity{
                         .into(restaurant_img);
 
                 collapsingToolbarLayout.setTitle(restaurants.getName());
+                collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.colorTransparent));
+
                 restaurant_price.setText(restaurants.getPrice());
 
                 restaurant_name.setText(restaurants.getName());
