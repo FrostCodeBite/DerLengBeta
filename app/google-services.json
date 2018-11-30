@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "654745825867",
+    "firebase_url": "https://derleng-beta.firebaseio.com",
+    "project_id": "derleng-beta",
+    "storage_bucket": "derleng-beta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654745825867:android:71036ee7efd31c26",
+        "android_client_info": {
+          "package_name": "com.example.user.derlengbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654745825867-h5nvnc5f1tv79d91qnbj26odsmc8ls5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.derlengbeta",
+            "certificate_hash": "0cd9d4c0df9b31abafaf75d44a14989abf470137"
+          }
+        },
+        {
+          "client_id": "654745825867-h89fc3kcf9aguk5l7vhpfq5scr99ks7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB52bAfAg5uHHFDNMhKkoRB5jvnnqt40JE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654745825867-h89fc3kcf9aguk5l7vhpfq5scr99ks7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
