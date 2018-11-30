@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Der Leng"
+        style="@style/LogoNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Ignore your concerns and let's hangout"
+        style="@style/OpenSanRegTxt"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content" />
+
+    <!--Username & Password Input-->
+    <EditText
+        android:id="@+id/username_edit"
+        android:hint="USERNAME"
+        style="@style/OpenSanBoldTxt"
+        android:width="300dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/password_edit"
+        android:hint="PASSWORD"
+        style="@style/OpenSanBoldTxt"
+        android:width="300dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--Signin Button-->
+    <Button
+        android:id="@+id/signin_btn"
+        android:text="SIGN IN"
+        android:background="@drawable/round_button"
+        style="@style/OpenSanBoldPinkTxt"
+        android:layout_width="260dp"
+        android:layout_margin="10dp"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/OpenSanRegTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password? " />
+
+        <!--Reset Password-->
+        <TextView
+            android:id="@+id/reset_psw"
+            style="@style/OpenSanBoldTxt"
+            android:text="Reset Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/OpenSanRegTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or login with" />
+
+    <!--Social Media Signin-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/facebook_icon"
+            android:layout_marginRight="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:src="@drawable/google_icon"
+            android:layout_marginLeft="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/OpenSanRegTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? " />
+
+        <!--Sign up Link-->
+        <TextView
+            android:id="@+id/sign_up"
+            style="@style/OpenSanBoldTxt"
+            android:text="Sign Up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

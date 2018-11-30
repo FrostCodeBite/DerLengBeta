@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LogoNameTxt">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">80dp</item>
+        <item name="android:fontFamily">@font/stardust_adventure</item>
+    </style>
+
+    <style name="OpenSanRegTxt">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="OpenSanBoldTxt">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <style name="OpenSanBoldPinkTxt">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
