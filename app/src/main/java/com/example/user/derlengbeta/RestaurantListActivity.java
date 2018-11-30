@@ -75,7 +75,7 @@ public class RestaurantListActivity extends AppCompatActivity{
 //        layoutManager = new LinearLayoutManager(this);
 //        recyclerView.setLayoutManager(layoutManager);
 
-        foodbtn = (Button)findViewById(R.id.food_link);
+//        foodbtn = (Button)findViewById(R.id.food_link);
 
         collapsingToolbarLayout = (CollapsingToolbarLayout)findViewById(R.id.collapsing);
 
@@ -86,28 +86,28 @@ public class RestaurantListActivity extends AppCompatActivity{
             getDetailRestaurant(restaurantID);
         }
 
-        foodbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent foodIntent = new Intent(RestaurantListActivity.this,FoodListActivity.class);
-                startActivity(foodIntent);
-
-//                restaurants.addValueEventListener(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-////                        String rest = dataSnapshot.getKey();
-//                        Intent foodIntent = new Intent(RestaurantListActivity.this,FoodListActivity.class);
-////                        foodIntent.putExtra("RestaurantID",restaurantID);
-//                        startActivity(foodIntent);
-//                    }
+//        foodbtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent foodIntent = new Intent(RestaurantListActivity.this,FoodListActivity.class);
+//                startActivity(foodIntent);
 //
-//                    @Override
-//                    public void onCancelled(@NonNull DatabaseError databaseError) {
-//
-//                    }
-//                });
-            }
-        });
+////                restaurants.addValueEventListener(new ValueEventListener() {
+////                    @Override
+////                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//////                        String rest = dataSnapshot.getKey();
+////                        Intent foodIntent = new Intent(RestaurantListActivity.this,FoodListActivity.class);
+//////                        foodIntent.putExtra("RestaurantID",restaurantID);
+////                        startActivity(foodIntent);
+////                    }
+////
+////                    @Override
+////                    public void onCancelled(@NonNull DatabaseError databaseError) {
+////
+////                    }
+////                });
+//            }
+//        });
     }
 
     private void getDetailRestaurant(String restaurantID) {
