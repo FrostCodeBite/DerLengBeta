@@ -21,7 +21,7 @@
     <!--Username & Password Input-->
     <EditText
         android:id="@+id/username_edit"
-        android:hint="USERNAME"
+        android:hint="@string/username"
         style="@style/OpenSanBoldTxt"
         android:width="300dp"
         android:layout_margin="10dp"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/password_edit"
-        android:hint="PASSWORD"
+        android:hint="@string/Password"
         style="@style/OpenSanBoldTxt"
         android:width="300dp"
         android:layout_margin="10dp"
@@ -39,7 +39,7 @@
     <!--Signin Button-->
     <Button
         android:id="@+id/signin_btn"
-        android:text="SIGN IN"
+        android:text="@string/title_activity_login2"
         android:background="@drawable/round_button"
         style="@style/OpenSanBoldPinkTxt"
         android:layout_width="260dp"
@@ -101,7 +101,7 @@
         <TextView
             android:id="@+id/sign_up"
             style="@style/OpenSanBoldTxt"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
