@@ -1,5 +1,6 @@
 package com.example.user.derlengbeta.Common;
 
+import com.example.user.derlengbeta.Model.Categories;
 import com.example.user.derlengbeta.Model.Food;
 import com.example.user.derlengbeta.Model.Restaurants;
 import com.example.user.derlengbeta.Model.Users;
@@ -10,6 +11,5 @@ import com.example.user.derlengbeta.Model.Users;
 
 public class Common {
     public static Users currentUser;
-    public static final String restaurantSelected="";
-    public static Restaurants currentRestaurant;
+    public static Categories currentCategories;
 }

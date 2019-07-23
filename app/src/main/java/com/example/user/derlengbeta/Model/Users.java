@@ -7,14 +7,14 @@ package com.example.user.derlengbeta.Model;
 public class Users {
     private String Name;
     private String Password;
-    private String email;
+    private String Email;
 
     public Users(){};
 
     public Users(String name, String password, String email) {
         Name = name;
         Password = password;
-        this.email = email;
+        Email = email;
     }
 
     public Users(String name, String password) {
@@ -39,10 +39,10 @@ public class Users {
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        Email = email;
     }
 }

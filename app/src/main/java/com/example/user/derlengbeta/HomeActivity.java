@@ -2,6 +2,7 @@ package com.example.user.derlengbeta;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
@@ -20,10 +21,14 @@ import android.widget.TextView;
 import com.example.user.derlengbeta.Common.Common;
 import com.example.user.derlengbeta.Interface.ItemClickListener;
 import com.example.user.derlengbeta.Model.Categories;
+import com.example.user.derlengbeta.Model.Restaurants;
 import com.example.user.derlengbeta.ViewHolder.MenuViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 public class HomeActivity extends AppCompatActivity
@@ -50,18 +55,20 @@ public class HomeActivity extends AppCompatActivity
         toolbar.setTitle("Home");
         setSupportActionBar(toolbar);
 
-//        Init Firebase
-        database = FirebaseDatabase.getInstance();
-        category = database.getReference("Restaurant");
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent searchIntent = new Intent(HomeActivity.this,SearchActivity.class);
+                startActivity(searchIntent);
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
+
+        //        Init Firebase
+        database = FirebaseDatabase.getInstance();
+        category = database.getReference("Restaurant");
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -100,8 +107,10 @@ public class HomeActivity extends AppCompatActivity
                     public void onClick(View view, int position, boolean isLongClick) {
 //                        Toast.makeText(HomeActivity.this, ""+clickItem.getName(), Toast.LENGTH_SHORT).show();
                         Intent restaurantList= new Intent(HomeActivity.this,RestaurantListActivity.class);
+                        Common.currentCategories = clickItem;
                         restaurantList.putExtra("RestaurantID",adapter.getRef(position).getKey());
                         startActivity(restaurantList);
+
                     }
                 });
             }

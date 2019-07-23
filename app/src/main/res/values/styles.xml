@@ -8,6 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+
     <style name="LogoNameTxt">
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textSize">80dp</item>
@@ -23,6 +30,12 @@
     <style name="OpenSanBoldTxt">
         <item name="android:textColor">@color/colorWhite</item>
         <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <style name="OpenSanBigBoldTxt">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">22dp</item>
         <item name="android:fontFamily">@font/opensans_bold</item>
     </style>
 

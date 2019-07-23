@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:width="300dp"
         android:layout_margin="10dp"
-        android:hint="PHONE NUMBER" />
+        android:hint="@string/phone_number" />
     <EditText
         android:id="@+id/email_edit"
         style="@style/OpenSanBoldTxt"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:width="300dp"
         android:layout_margin="10dp"
-        android:hint="EMAIL" />
+        android:hint="@string/prompt_email" />
     <EditText
         android:id="@+id/username_edit"
         style="@style/OpenSanBoldTxt"
@@ -42,10 +42,10 @@
         android:layout_height="wrap_content"
         android:width="300dp"
         android:layout_margin="10dp"
-        android:hint="USERNAME" />
+        android:hint="@string/username" />
     <EditText
         android:id="@+id/password_edit"
-        android:hint="PASSWORD"
+        android:hint="@string/prompt_password"
         style="@style/OpenSanBoldTxt"
         android:width="300dp"
         android:layout_margin="10dp"
@@ -55,7 +55,7 @@
     <!--Signin Button-->
     <Button
         android:id="@+id/signup_btn"
-        android:text="SIGN UP"
+        android:text="@string/sign_up"
         android:background="@drawable/round_button"
         style="@style/OpenSanBoldPinkTxt"
         android:layout_width="260dp"

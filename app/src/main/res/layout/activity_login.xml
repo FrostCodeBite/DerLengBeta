@@ -21,7 +21,7 @@
     <!--Username & Password Input-->
     <EditText
         android:id="@+id/username_edit"
-        android:hint="USERNAME"
+        android:hint="@string/phone_number"
         style="@style/OpenSanBoldTxt"
         android:width="300dp"
         android:layout_margin="10dp"
@@ -29,7 +29,13 @@
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/password_edit"
-        android:hint="PASSWORD"
+        android:hint="@string/prompt_password"
+        android:imeActionId="6"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
         style="@style/OpenSanBoldTxt"
         android:width="300dp"
         android:layout_margin="10dp"
@@ -39,7 +45,7 @@
     <!--Signin Button-->
     <Button
         android:id="@+id/signin_btn"
-        android:text="SIGN IN"
+        android:text="@string/action_sign_in_short"
         android:background="@drawable/round_button"
         style="@style/OpenSanBoldPinkTxt"
         android:layout_width="260dp"
@@ -71,21 +77,14 @@
         android:text="or login with" />
 
     <!--Social Media Signin-->
-    <LinearLayout
-        android:orientation="horizontal"
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook_login"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:src="@drawable/facebook_icon"
-            android:layout_marginRight="30dp"
-            android:layout_width="50dp"
-            android:layout_height="50dp" />
-        <ImageView
-            android:src="@drawable/google_icon"
-            android:layout_marginLeft="30dp"
-            android:layout_width="50dp"
-            android:layout_height="50dp" />
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_marginTop="10dp"
@@ -101,7 +100,7 @@
         <TextView
             android:id="@+id/sign_up"
             style="@style/OpenSanBoldTxt"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

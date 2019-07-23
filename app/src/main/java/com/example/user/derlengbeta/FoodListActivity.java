@@ -65,7 +65,7 @@ public class FoodListActivity extends AppCompatActivity {
         adapter = new FirebaseRecyclerAdapter<Food, FoodViewHolder>(Food.class, R.layout.food_item_activity, FoodViewHolder.class, foodList) {
             @Override
             protected void populateViewHolder(FoodViewHolder viewHolder, Food model, int position) {
-                viewHolder.food_txt.setText(model.getName());
+                viewHolder.food_name_txt.setText(model.getName());
                 Picasso.with(getBaseContext()).load(model.getImage())
                         .into(viewHolder.food_img);
 
